@@ -1,0 +1,1 @@
+docker run -d -it --name export_ser --net=host --privileged=true -v /home/GitHub:/home -v /opt/images:/home/export centos-python3.6/requests:1.4.1 gunicorn -c /home/SX-ExportServer/gun.py --chdir /home/SX-ExportServer run:app

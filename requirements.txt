@@ -1,0 +1,6 @@
+flask>=0.10.1
+Flask-SQLAlchemy>=2.0
+Flask-Cache>=0.13.1
+arrow>=0.5.4
+requests>=2.5.0
+tablib>=0.14.0
