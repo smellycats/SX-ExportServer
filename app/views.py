@@ -34,7 +34,7 @@ def export_post():
         path = '{0}/{1}'.format(app.config['BASE_PATH'], now)
         if not os.path.isdir(path):
             os.makedirs(path)
-        with open(name, 'wb') as f:
+        with open(name.encode('utf-8'), 'wb') as f:
             f.write(data.export(type))
     except Exception as e:
         logger.exception(e)
